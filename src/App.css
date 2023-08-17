@@ -1,0 +1,61 @@
+body {
+    max-width: 1023px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.movies-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    padding: 0;
+}
+
+.movie-card {
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.movie-card img {
+    width: 100%;
+}
+
+.movie-card h3 {
+    display: flex;
+    place-items: center;
+    height: 40px;
+    margin: 0;
+    font-size: medium;
+    justify-content: center;
+    text-align: center;
+}
+
+.movie-card p {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.movie-card p span {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2px 6px;
+    border-radius: 16px;
+    margin-top: 5px;
+    padding-bottom: 6px;
+}
+
+footer {
+    text-align: center;
+}
