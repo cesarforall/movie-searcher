@@ -12,7 +12,7 @@ export default function App () {
   const [movies, setMovies] = useState([])
 
   function searchMovies () {
-    fetch(`http://www.omdbapi.com/?apikey=4aea3be1&s=${searchText}`)
+    fetch(`https://www.omdbapi.com/?apikey=4aea3be1&s=${searchText}`)
       .then((res) => res.json())
       .then(responseMovies => {
         const movies = responseMovies.Search
